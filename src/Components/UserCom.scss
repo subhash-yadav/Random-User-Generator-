@@ -1,0 +1,117 @@
+@import "../breakPoint.scss";
+
+.section {
+  position: relative;
+  &-body {
+    height: 500px;
+    width: 100%;
+    background: #2c2e31;
+    text-align: center;
+    &__title {
+      font-size: 48px;
+      font-weight: 100;
+      padding-top: 100px;
+      color: white;
+    }
+    &__desc {
+      font-size: 18px;
+      color: white;
+      padding: 10px 0;
+      .link {
+        color: #08a;
+      }
+    }
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      color: hsla(0, 0%, 100%, 0.5);
+    }
+  }
+  &-content {
+    background: white;
+    position: relative;
+    top: -150px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px 10px;
+    &__circle {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border: 1px solid gray;
+      border-radius: 50%;
+      margin: 20px auto;
+      padding: 5px;
+      z-index: 2;
+      background: white;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        .new {
+          display: block;
+        }
+      }
+      .image {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+        
+      }
+      .new {
+        padding: 8px 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: none;
+        color: white;
+        font-size: 18px;
+        border-radius: 8px;
+        position: absolute;
+        bottom: -15%;
+        right: 25%;
+        display: none;
+        cursor: pointer;
+      }
+    }
+    &__hrLine {
+      position: absolute;
+      top: 100px;
+      width: 95%;
+      z-index: 1;
+      @include md {
+        width: 98%;
+      }
+    }
+    &__my {
+      color: #999;
+      font-size: 18px;
+      margin: 0;
+    }
+    &__name {
+      color: #2c2e31;
+      font-size: 38px;
+      margin: 5px;
+    }
+    &__ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 40px;
+      margin: 20px 0;
+      .li {
+        font-size: 35px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            color: green;
+        }
+      }
+    }
+  }
+}

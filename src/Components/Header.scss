@@ -1,0 +1,28 @@
+@import "../breakPoint.scss";
+.header {
+  overflow-x: hidden;
+  height: 60px;
+  background: #222;
+  color: white;
+  &-ul {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    &__li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-weight: lighter;
+    }
+  }
+  &-sticky{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+}

@@ -1,0 +1,57 @@
+@import "./breakPoint.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+
+.mainContainer {
+  max-width: 90%;
+  margin: 0 auto;
+  @include md {
+    max-width: 95%;
+    margin: 0 auto;
+
+  }
+  @include lg{
+    max-width: 90%;
+    margin: 0 auto;
+
+  }
+  @include xl {
+    max-width: 90%;
+    margin: 0 auto;
+
+  }
+  @include xxl{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+ 
+  
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  @include md {
+    max-width: 95%;
+    margin: 0 auto;
+
+  }
+  @include lg{
+    max-width: 70%;
+    margin: 0 auto;
+
+  }
+  @include xl {
+    max-width: 60%;
+    margin: 0 auto;
+
+  }
+  @include xxl{
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
